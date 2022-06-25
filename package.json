@@ -1,0 +1,25 @@
+{
+  "name": "doobbe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KXRXH/doobBackEnd.git"
+  },
+  "type": "module",
+  "author": "kxrxh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KXRXH/doobBackEnd/issues"
+  },
+  "homepage": "https://github.com/KXRXH/doobBackEnd#readme",
+  "dependencies": {
+    "@supabase/supabase-js": "^1.35.3",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1"
+  }
+}
