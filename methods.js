@@ -1,17 +1,4 @@
 /*
-async function addToMemory(supabase, id) {
-  let {data, err} = await supabase.from('memory').
-      select('ids').eq('id', 0);
-  if (err) {
-    return err;
-  }
-  data.push(id);
-  err = await supabase.from('memory').update({'ids': data});
-  if (err) {
-    return err;
-  }
-  return null;
-}
  */
 
 import {getIndexesOfMaxValues} from './utils.js';
@@ -57,19 +44,6 @@ export async function updateCombinationsTable(supabase) {
     }
 
   }
-  /*
-   // Получаем текущий список треков для дайнной пары цветов
-  data = await supabase.from('combinations').
-      select('songs').
-      eq('id', `${indFst}${indSnd}`);
-  let songArr = data.data[0]['songs'];
-  if (songArr.includes(editedId)) continue;
-  songArr.push(editedId);
-  await supabase.from('combinations').
-      update([{'songs': songArr}]).
-      eq('id', `${indFst}${indSnd}`);
-}
-   */
   await updateMemory(supabase, []);
 
 }
